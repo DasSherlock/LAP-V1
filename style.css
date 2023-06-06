@@ -1,0 +1,64 @@
+header{
+    background-color:rgb(168, 0, 0);
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    display: flex;
+}
+
+nav{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    display:block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+}
+
+nav li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a{
+    color:rgb(92, 4, 4);
+    text-decoration: none;
+    padding: 0px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+}
+nav a:hover{
+    color:rgb(255, 154, 154);
+}
+
+/* Coso que permite poner cosas especificas para diferentes tamaños de pags:
+ @media (max-width: 767px) {
+    header{
+        background-color: aqua;
+    }
+} */
+
+@media (max-width: 1240px) {
+    nav{
+        font-size: 20px;
+        display:block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+        padding-inline-end: 0px;
+    }
+}
