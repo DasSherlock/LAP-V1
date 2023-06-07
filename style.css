@@ -62,3 +62,9 @@ nav a:hover{
         padding-inline-end: 0px;
     }
 }
+
+/*Style de elementos del main*/
+
+.greeting{
+    text-align: center;
+}
