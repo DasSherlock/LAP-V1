@@ -2,12 +2,61 @@
 <html>
     <head>
         <title>Inicio</title>
+        <link rel="stylesheet"type="text/css"href="style.css">
+        <link rel="stylesheet"type="text/css"href="styleUNIRSE.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
-        <header>
-            <h1>Donde futuramente se podran unir a la lucha.</h1>
+        <header class="container-nav">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Incio</a></li>
+                    <li><a href="sobre-la-causa.html">Sobre la causa</a></li>
+                    <li><a href="Ideales.html">Nuestros Ideales</a></li>
+                    <li><a href="Unirse.html">Unirse</a></li>
+                </ul>
+            </nav>
         </header>
+        <main>
+            <div>
+                <p class="textu1">230 personas ya se han unido a LAP...</p>
+                <p class="textu2">¿Qué esperas?</p>
+                <p class="textu3">¡UNETE A LA LEGION!</p>
+                
+                <form class="form1">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                    <br />
+                    <br />
+                    <label for="pronombres">Pronombres:</label>
+                    <select id="pronombres" name="pronombres" required>
+                        <option></option>
+                        <option value="she/her/femeninos">Femeninos</option>
+                        <option value="he/him/masculinos">Maculinos</option>
+                        <option value="they/them/neutros">Neutros</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                    <br />
+                    <br />
+                    <label for="email">Corre electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br />
+                    <br />
+                    <label for="razones">¿Por qué quieres unirte a LAP?</label>
+                    <textarea id="razones" name="razones" required></textarea>
+                    <br />
+                    <br />
+                    <button type="submit" id="botonUnirse">Enviar</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="index-foot-text-unirse">
+                <p>Todos los derechos resevados a ©LAP 2023</p>
+                <p>para mas informacion contactar al encargado</p>
+                <p>lapheadoffice@gmail.com</p>
+            </div>
+        </footer>
     </body>
-
 </html>

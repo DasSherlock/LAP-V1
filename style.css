@@ -1,3 +1,8 @@
+* {
+    padding: 0.5;
+    margin: 1;
+}
+
 header{
     background-color:rgb(168, 0, 0);
     text-align: center;
@@ -6,10 +11,28 @@ header{
     display: flex;
 }
 
+.whole-container{
+    margin: 0%;
+    text-align: center;
+    width: 100%;
+    background-image: url(imagesAndIcons/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Añade esta línea */
+}
+
+body{
+    background-color: #eea28f;
+    margin: 0%;
+}
+
 nav{
     display: block;
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
     display:block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -19,7 +42,6 @@ nav{
     padding-inline-start: 0px;
     padding-inline-end: 0px;
 }
-
 nav ul{
     list-style: none;
     display:flex;
@@ -31,6 +53,7 @@ nav li{
     margin-right: 20px;
 }
 
+/*texto del navbar*/
 nav a{
     color:rgb(92, 4, 4);
     text-decoration: none;
@@ -63,8 +86,107 @@ nav a:hover{
     }
 }
 
+@media (min-width: 920px){
+    nav{
+        display:block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+        padding-inline-end: 0px;
+    }
+    .greeting{
+        font-size: 17px;
+        display: block;
+    }
+    .bienvenida{
+        font-size: 7px;
+        display: block;
+        padding-top: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 25px;
+    }
+}
+
 /*Style de elementos del main*/
+
+.baner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo img{
+    padding-top: 50px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-bottom: 60px;
+    max-width: 100%;
+    height: auto;
+    background-color:rgb(134, 25, 25);
+}
+
+/* Añadimos una especificación(max-width: 100%) a la anchura del banner, para que se vaya rediseñando su tamaño cuando se achica la página */
+
+.lapt1{
+    color:rgb(212, 15, 15);
+    font-family: 'Trebuchet MS';
+    font-size: 30px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    margin: 0px;
+    font-weight: bold;
+    display: block;
+    background-color: rgb(134, 25, 25);
+}
 
 .greeting{
     text-align: center;
+    color:rgb(68, 12, 12);
+    font-family: 'Trebuchet MS';
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: block;
+    background-color: rgb(134, 25, 25);
+}
+
+.bienvenida{
+    text-align: center;
+    color:rgb(92, 4, 4);
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 25px;
+    margin: 0px;
+    display: block;
+    background-color: rgba(112, 29, 29, 0.411);
+    font-weight: bold;
+}
+
+.index-foot-text{
+    margin-top: -4px;
+    background-color: rgba(112, 29, 29, 0.411);
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    bottom: 0%;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    color:rgb(156, 44, 44);
+    font-size: 16px;
 }
